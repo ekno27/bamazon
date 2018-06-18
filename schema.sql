@@ -44,7 +44,11 @@ values ("The thong song...thong", "clothing","25.00",10);
 INSERT INTO products (product_name, department_name, price, stock_quantity)
 values ("Redbone steak", "food","99999.99",10);
 
- SELECT * FROM products;
+UPDATE products SET stock_quantity = 10 where item_id = 4;
+
+SELECT * from products where item_id=4;
+
+ SELECT  product_name ,stock_quantity FROM products WHERE stock_quantity < 5;
 
 
 
